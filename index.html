@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% autoescape true %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+<body>
+    {% for greeting in greetings %}
+      {% if greeting.author %}
+        <b>{{ greeting.author.email }}
+          {% if user and user.user_id() == greeting.author.identity %}
+            (You)
+          {% endif %}
+        </b> wrote:
+      {% else %}
+       An anonymous person wrote:
+      {% endif %}
+      <blockquote>{{ greeting.content }}</blockquote>
+    {% endfor %}
+
+    <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
+      <div><textarea name="content" rows="10" cols="50"></textarea></div>
+      <div><input type="submit" value="Sign Guestbook"></div>
+    </form>
+
+    <hr>
+
+    <form>Guestbook name:
+      <input value="{{ guestbook_name }}" name="guestbook_name">
+      <input type="submit" value="switch">
+    </form>
+
+    <a href="{{ url|safe }}">{{ url_linktext }}</a>
+
+  </body>
+</html>
+{% endautoescape %}
