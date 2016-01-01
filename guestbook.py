@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-#
+# -*- coding:utf-8 -*-
+
 # Copyright 2007 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +15,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# -*- coding:utf-8 -*-
 
 import os
 import urllib
@@ -69,6 +68,7 @@ class MainPage(webapp2.RequestHandler):
         logging.info("logged!!")
 
         self.response.write(SIGN_PAGE_HTML)
+
         # Checks for active Google account session
         user = users.get_current_user()
         if user:
@@ -105,6 +105,7 @@ class MainPage(webapp2.RequestHandler):
 class Guestbook(webapp2.RequestHandler):
     def post(self):
         self.response.write(SIGN_PAGE_HTML)
+
         guestbook_name = self.request.get('guestbook_name',
                                           DEFAULT_GUESTBOOK_NAME)
         greeting = Greeting(parent=guestbook_key(guestbook_name))
@@ -113,7 +114,6 @@ class Guestbook(webapp2.RequestHandler):
             greeting.author = Author(
                     identity=users.get_current_user().user_id(),
                     email=users.get_current_user().email())
-
         greeting.content = self.request.get('content')
         greeting.put()
 
