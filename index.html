@@ -1,133 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
-  <title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="hamaokah aka Harumi Hamaoka is an engineer with passion for all-around web, app and infrastructure.">
+  <title>hamaokah.info</title>
 
-      Harumi Hamaoka — #Programming #Tech #Social
-
-  </title>
-  <meta name="description" content="hamaokah aka Harumi Hamaoka is an engineer with a strong passion for all-around web, application and infrastructure.">
-
-  <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
-  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css">
-
-  <link rel="canonical" href="http://hamaokah.info/">
-<!--
-<link rel="alternate" type="application/atom+xml" title="Harumi Hamaoka" href="https://HarumiHamaoka.com/blog/feed.xml" />
--->
-
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" charset="utf-8"></script>
-  <script async src="js/script.js" charset="utf-8"></script>
-
-<!-- Google Analytics (http://google.com/analytics) -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-53225-16']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
+  <!-- CSS  -->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Inconsolata" type="text/css" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="http://hamaokah.info" class="brand-logo">hamaokah.info</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/" title="Home Page">Home</a></li>
+        <li><a href="/about" title="About">About</a></li>
+        <li><a href="http://blog.hamaokah.info" title="Blog">Blog</a></li>
+        <li><a href="/quotes" title="Quotes about life and programming">Quotes</a></li>
+      </ul>
 
-<div id="header">
-  <div class="container">
-    <div class="row">
-      <div class="header-logo col-md-7">
-        <h1><a href="/">Harumi Hamaoka</a>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="/" title="Home Page">Home</a></li>
+        <li><a href="/about" title="About">About</a></li>
+        <li><a href="http://blog.hamaokah.info" title="Blog">Blog</a></li>
+        <li><a href="/quotes" title="Quotes about life and programming">Quotes</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-        </h1>
+<!--
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
       </div>
-      <div class="header-nav col-md-5">
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+-->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">"I wish I'd write code, when I'm working."</h1>
+        <div class="row center">
+          <a href="http://blog.hamaokah.info" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Go to my blog</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 left">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <p>Hi! I'm <b>Harumi Hamaoka</b>, aka hamaokah. I'm an <b>engineer</b> with passion for all-around <b>web, app, and infrastructure.</b></p>
+          <p>This is the right place to find some information <a href="/">about me</a>, or read my <a href="http://blog.hamaokah.info">blog</a> about tech, programming, and lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-wrapper container">
+    <div class="col l3 s12">
+      <h5 class="header col s12 light">Connect</h5>
         <ul>
-          <li><a href="/" class="target-home" title="Home Page">Home</a></li>
-          <li><a href="/about" class="target-about" title="About">About</a></li>
-          <li><a href="http://blog.hamaokah.info" class="target-blog" title="Blog">Blog</a></li>
-<!--          <li><a href="/projects" class="target-projects" title="Projects">Projects</a></li>-->
-          <li><a href="/quotes" class="target-quotes" title="Quotes about life and programming">Quotes</a></li>
+          <li><a href="https://github.com/hamaokah"><i class="fa fa-github" title="GitHub" rel="tooltip"></i></a></li>
+          <li><a href="https://twitter.com/pattyhama"><i class="fa fa-twitter" title="Twitter" rel="tooltip"></i></a></li>
+          <li><a href="https://www.facebook.com/harumi.hamaoka"><i class="fa fa-facebook" title="Facebook" rel="tooltip"></i></a></li>
+          <li><a href="/contact/"><i class="fa fa-envelope" title="Contact me" rel="tooltip"></i></a></li>
         </ul>
+    </div>
+  </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright &copy; 2016 <a class="brown-text text-lighten-3" href="http://hamaokah.info">Harumi Hamaoka</a>
       </div>
     </div>
-  </div>
-</div>
-
-<hr class="separator">
-
-<div id="content">
-  <div class="container">
-    <main id="main" class="page-home">
-
-  <h1 id="claim">
-    <i class="fa fa-quote-left"></i>
-    I write code, when I'm off.
-    <i class="fa fa-quote-right"></i>
-  </h1>
-
-  <hr class="soften">
-
-  <div class="section-hello row">
-    <div class="hello-avatar col-md-4">
-      <img src="/images/me.jpg" class="avatar" alt="Harumi Hamaoka">
-    </div>
-    <div class="hello-about col-md-7 col-md-offset-1">
-      <p class="emphasize">Hi! I'm <strong>Harumi</strong> and I'm an <strong>engineer</strong> with a strong passion for <strong> all-around web, application and infrastructure</strong>.</p>
-      <p>This is the right place to find some information <a href="/about/">about me</a>, or read my <a href="http://blog.hamaokah.info">blog</a> about programming, tech and social.</p>
-<!--      <p>I make things happen at <a href="https://dnsimple.com">DNSimple</a>.</p> -->
-
-      <div class="hello-contact">
-        <p class="hello-contact-profiles">
-          <a href="https://github.com/hamaokah"><i class="fa fa-github" title="GitHub" rel="tooltip"></i></a>
-          <a href="https://twitter.com/pattyhama"><i class="fa fa-twitter" title="Twitter" rel="tooltip"></i></a>
-          <a href="https://www.facebook.com/harumi.hamaoka"><i class="fa fa-facebook" title="Facebook" rel="tooltip"></i></a>
-<!--          <a href="https://stackoverflow.com/users/"><i class="fa fa-stack-overflow" title="StackOverflow" rel="tooltip"></i></a> -->
-          <a href="/contact/"><i class="fa fa-envelope" title="Contact me" rel="tooltip"></i></a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <hr class="soften">
-
-  <!--
-  <section class="section-speaking">
-    <h2 class="talks-upcoming"><a href="/speaking">Speaking Schedule</a></h2>
-
-    <ul class="talks-list">
-      <li class="talks-list-item">
-        <a href="http://rome2016.codemotionworld.com/" class="talk-conference" target="_blank">Codemotion Rome 2016</a> &mdash;
-        <span class="talk-title">Let's go HTTPS</span>
-        <time datetime="2016-03-18" class="talk-date">18 Mar 2016</time>
-      </li>
-      <li class="talks-list-item">
-        <a href="http://railsconf.com/" class="talk-conference" target="_blank">RailsConf 2016</a> &mdash;
-        <span class="talk-title">Developing and maintaining a platform with Rails and Lotus</span>
-        <time datetime="2016-05-04" class="talk-date">04 May 2016</time>
-      </li>
-    </ul>
-  </section>
-  -->
-</main>
-
-  </div>
-</div>
-
-<hr class="separator">
-
-<div id="footer">
-  <div class="container">
-    Copyright &copy; 2016 Harumi Hamaoka
-  </div>
-</div>
-
-</body>
+  </footer>
+  <!-- Scripts / Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
 </html>
